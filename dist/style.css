@@ -1,0 +1,149 @@
+ *{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: steelblue;
+ }
+ 
+ .container{
+    display: flex;
+    height: 100%;
+}
+
+.project-container{
+    display: flex;
+    width: 100%;
+}
+
+.project-navbar{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    padding: 13px;
+    gap: 20px;
+    background-color: #888;
+    .single-project-div{
+        display: flex;
+        flex-direction: row;
+        p{
+            width: 100%;
+            height: auto;
+        }
+        p:hover{
+            cursor: pointer;
+        }
+        button{
+            cursor: pointer;
+            background-color: rgba(131, 24, 24, 0.63);
+        }
+    }
+    .single-project-div:hover{
+        transform: scale(1.04);
+        background-color: rgb(84, 100, 100);
+    }
+}
+
+.project-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+    background-color: steelblue;
+    /* task div css */
+    div{
+        border: solid;
+        border-radius: 7px;
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+        background-color: cadetblue;
+        button{
+             background-color: rgba(0, 128, 0, 0.432);
+        }
+        p{
+            width: 300px;
+        }
+    }
+}
+
+.my-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #888;
+    width: 40%;
+    gap: 20px;
+}
+
+.modal-content > form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: 1;
+    gap: 20px;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: aliceblue;
+    button{
+        background-color: rgba(31, 134, 31, 0.562);
+        height: 40px;
+        width: 120px;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+    button:hover{
+        cursor: pointer;
+        transform: scale(1.06);
+        transition: 0.5s;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: #fefefe;
+    background-color: rgba(0, 0, 0, 0.678);
+    a{
+        text-decoration: none;
+        color: #fefefe;
+    }    
+}
+
+
+

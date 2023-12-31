@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task-List</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="bottom-btn">
+            <button class="add-btn" id="addProject">Add project!</button>
+        </div>
+        <div class="my-modal" id="projectmodal">
+            <div class="modal-content" id="modalproject">
+                <span class="close">&times;</span>
+                <form id="projectdata" name="project-add">
+                    <input type="text" placeholder="Project Name" name="project" id="project-add" maxlength="30" required>
+                    <input type="submit" value="submit" id="formBtn">
+                </form>
+            </div>
+        </div>
+        
+        <div class="bottom-btn">
+            <button class="add-btn" id="addTask">Add task!</button>
+        </div>
+        <div class="my-modal" id="taskmodal">
+            <div class="modal-content" id="modaltask">
+                <span class="close">&times;</span>
+                <form id="taskdata" name="task-add">
+                    <input type="text" placeholder="Task name" name="taskName" id="taskName-add" maxlength="30" required>
+                    <input type="text" placeholder="Task description" name="taskDescription" maxlength="60" id="taskDescription-add" required>
+                    <input type="text" placeholder="Task date" name="taskDate" id="taskDate-add" maxlength="30" required>
+                    <input type="checkbox" placeholder="Task done" name="taskDone" id="taskDone-add" value="no" style="display:none;">
+        
+                    <input type="submit" value="submit" id="formBtn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="project-container" id="project-container"></div>
+        <div class="task-container" id="task-container"></div>
+    </div>
+    <footer><a href="https://github.com/PaunescuDragos-99" target="_blank">Made by: Paunescu Dragos</a></footer>
+  
+    <script src="main.js""></script>
+</body>
+</html>
